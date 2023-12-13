@@ -1,0 +1,182 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include box-sizing for better layout control */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a font for the body text */
+    margin: 0;
+}
+
+/* nav bar */
+nav{
+    position: sticky;
+    top: 0;
+    
+    z-index: 1000;
+}
+.nav-bar {
+    /* position: fixed; */
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    background-color: antiquewhite;
+
+}
+.logo h1{
+    font-size:3rem;
+    cursor: pointer;
+}
+.logo h1 span{
+    /* color: rgb(37, 193, 37); */
+    color: #3b5998
+
+}
+
+#search-bar{
+    width:18rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    outline: none;
+    text-decoration: none;
+}
+
+.nav-bar i {
+    font-size: 32px; /* Adjust the icon size */
+    cursor: pointer; /* Make the icons clickable */
+}
+
+/* -----------------end of navBar------------------ */
+
+/* ------------------start of main container ---------------- */
+
+.container{
+    display: flex;
+    /* position: fixed; */
+    height: 100vh;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+.left-side-bar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 25%;
+    /* height: 100vh; */
+    margin: 1rem;
+    border: 2px solid blue;
+    /* background-color: #3388d79d; */
+    
+    overflow-y: auto; 
+
+}
+
+.mid-container{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    overflow-y: auto;
+    margin: 1rem auto;
+    border: 2px solid green;
+    /* height: 100vh; */
+
+}
+.mid-container h2{ 
+    padding: 1rem ;
+    text-align: center;
+}
+
+.right-side-bar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    right: 0;
+    flex-basis: 25%;
+    /* height: 100vh; */
+    margin: 1rem ;
+    border: 2px solid blue;
+    /* background-color: #f0f0f0; */
+    overflow-y: auto; 
+}
+.user-profile{
+    display: flex;
+    flex-direction: column;
+}
+.user-profile img{
+    width: 10rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.profileUpdate-btn{
+    font-weight: bolder;
+    background-color: rgb(57, 57, 246);
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 5%;
+    /* text-align: center */
+}
+/* ------------------end of main container ---------------- */
+
+
+/* -------------mid-container---------------- */
+.posts{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* justify-content:space-between; */
+    align-items: center;
+}
+.create-post{
+    /* display: flex;
+    flex-direction: column; */
+    margin: 2rem;
+}
+.create-post button{
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    /* border-radius: 50%; */
+
+}
+.like{
+    width: 3rem;
+    margin: 1rem 0;
+    padding: 0.2rem 0.5rem;
+}
+.liked{
+    background-color: blue;
+    
+}
+
+.post-item{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 1rem 4rem;
+    border: 2px solid grey;
+    height: fit-content;
+    width:100%;
+    margin: 2rem auto;
+}
+.posted{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 1rem 2rem;
+    margin: 2rem 2rem;
+}
+.posted h2{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+

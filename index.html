@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fakebook</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <i class="fas fa-bars"></i>
+            <div class="logo">
+                <H1>fake<span>book</span></H1>
+            </div>
+            <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+            <input type="text" id="search-bar" placeholder="Search">
+        </div>
+    </nav>
+
+    <div class="container main-container">
+        <div class="left-side-bar">
+
+        </div>
+
+        <div class="mid-container">
+            <h2>Your Feed</h2>
+            <div class="posts" >
+                <div class="create-post">
+                    <textarea name="create_post" id="postInput" placeholder="write your post here" cols="80" rows="15"></textarea>
+                    <button type="submit" id="submit-post">Post</button>
+                </div>
+                
+                <div class="posted" id="postedList">
+                   
+                   <div class="post-item" >
+                    <p>Hello guys this is a post</p>
+                    <br><br>
+                    <h3>Comment section</h3>
+                    <div class="comment-item">
+                        <input type="text" value="hey this is a comment">
+                        <button type="submit" class="submit-comment">Comment</button>
+                        
+                    </div>
+                    
+                    <div class="comments">
+                        
+                    </div>
+                   </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-side-bar">
+            <div class="user-profile">
+                <img src="https://th.bing.com/th/id/OIP.1yoSL-WO0YU5mQKROudvswHaHa?rs=1&pid=ImgDetMain" alt="profile_pic" id="profile_pic">
+                <label for="profileInput" class="profileUpdate-btn" >Add profile picture</label>
+                <input type="file" id="profileInput" style="display: none;">
+
+            </div>
+            
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
